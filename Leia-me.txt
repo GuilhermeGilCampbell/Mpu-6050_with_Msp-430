@@ -1,0 +1,35 @@
+
+main.c ----------------------------------------------
+
+O programa main.c utiliza o MSP430F5529 para coletar os resultados do acelerômetro, giroscópio e sensor de temperatura. Os dados coletados são armazenados nas variáveis ACCEL em g, GYRO em graus/segundo e TEMP em graus Celsius.
+
+mpuTest.c --------------------------------------------
+
+O programa mpuTest.c realiza as seguintes etapas:
+	1. Retira o MPU do modo sleep;
+	2. Testa comunicação;
+	3. Auto teste (Self-Test);
+	4. Calibração;
+	5. Configuração para operação;
+	6. Realiza length leituras do acelerômetro x e armazena resultados em data_collect.
+Caso não esteja utilizando LCD basta retirar as linhas que o citam.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+main.c ----------------------------------------------
+
+The main.c program uses the MSP430F5529 to collect the results of the accelerometer, gyroscope, and temperature sensor. The collected data are stored in ACCEL variables in g, GYRO in degrees / sec and TEMP in degrees Celsius.
+
+mpuTest.c --------------------------------------------
+
+The mpuTest.c program performs the following steps:
+1. Remove the MPU from sleep mode;
+2. Tests communication;
+3. Self-Test;
+4. Calibration;
+5. Con figuration for operation;
+6. Performs length readings of accelerometer x and stores results in data_collect.
+
+If you are not using LCD, simply remove the lines that mention it.
